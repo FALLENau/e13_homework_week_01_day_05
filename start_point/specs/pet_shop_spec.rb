@@ -113,7 +113,7 @@ class TestPetShop < Minitest::Test
   # def test_all_pets_by_breed__found
   #   pets = pets_by_breed(@pet_shop, "British Shorthair")
   #   assert_equal(2, pets.count)
-  # end
+  # end #note: Chicken lOOPS
 
   # def test_all_pets_by_breed__not_found
   #   pets = pets_by_breed(@pet_shop, "Dalmation")
@@ -123,12 +123,12 @@ class TestPetShop < Minitest::Test
   # def test_find_pet_by_name__returns_pet
   #   pet = find_pet_by_name(@pet_shop, "Arthur")
   #   assert_equal("Arthur", pet[:name])
-  # end
+  # end #Note: Return the full pet hash!!!
 
   # def test_find_pet_by_name__returns_nil
   #   pet = find_pet_by_name(@pet_shop, "Fred")
   #   assert_nil(pet)
-  # end
+  # end #note: same as above test use true and false test.
 
   # def test_remove_pet_by_name
   #   remove_pet_by_name(@pet_shop, "Arthur")
@@ -167,8 +167,11 @@ class TestPetShop < Minitest::Test
   #   assert_equal(true, can_buy_pet)
   # end
 
+
   # #These are 'integration' tests so we want multiple asserts.
   # #If one fails the entire test should fail
+  # #Note: All these test are to be completed by "ONE" function.
+
   # def test_sell_pet_to_customer__pet_found
   #   customer = @customers[0]
   #   pet = find_pet_by_name(@pet_shop,"Arthur")
